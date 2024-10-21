@@ -111,42 +111,15 @@ app.get("/users", (req, res) => {
   });
 });
 
-app.get("/single-product", (req, res) => {
-  const id = parseInt(req.query.id);
-
-  fs.readFile("db.json", "utf8", (err, data) => {
-    if (err) {
-      console.log(err);
-      res.status(500).send("Internal Server Error");
-      return;
-    }
-
-    const jsonData = JSON.parse(data);
-
-    const index = jsonData.items.findIndex((item) => item.id === id);
-
-    if (index === -1) {
-      res.status(404).send("Not Found");
-      return;
-    }
-
-    result = jsonData.items[index]
-
-    res.status(200).json({
-      result
-    });
-
-  });
-});
-
 app.get("/articles", (req, res) => {
-
   fs.readFile("db.json", "utf8", (err, data) => {
     if (err) {
       console.log(err);
       res.status(500).send("Internal Server Error");
       return;
     }
+
+    console.log("Data read from file:", data); // Add this line for debugging
 
     const jsonData = JSON.parse(data);
 
