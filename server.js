@@ -152,7 +152,6 @@ app.get("/articles", (req, res) => {
 
     res.status(200).json({
       articles: jsonData.articles,
-      total: jsonData.articles.length,
     });
   });
 });
