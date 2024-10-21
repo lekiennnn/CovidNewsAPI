@@ -13,10 +13,34 @@
             "title": "New COVID-19 and flu shots are here. Can you get them together? Here's what experts say"
         },
         {
-            "author": "Marley Malenfant",
+            "author": "Dani Blum",
             "link": "https://www.nytimes.com/2024/09/26/well/free-covid-tests.html",
             "media": "https://static01.nyt.com/images/2024/09/11/multimedia/WELL-FREE-COVID-TESTS1-fbph/WELL-FREE-COVID-TESTS1-fbph-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
             "title": "Free Covid Tests Are Back"
+        },
+        {
+            "author": "Akshay Syal, M.D",
+            "link": "https://www.nbcnews.com/health/health-news/xec-covid-variant-contagious-will-updated-vaccines-work-rcna172921",
+            "media": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2024-09/240926-covid-variant-kh-7f48f3.jpg",
+            "title": "What to know about the XEC Covid variant"
+        },
+        {
+            "author": "Berkeley Lovelace Jr",
+            "link": "https://www.nbcnews.com/health/health-news/florida-covid-shots-mrna-vaccines-older-adults-rcna170997",
+            "media": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2022-02/220211-pfizer-vaccine-mn-1020-34ec10.jpg",
+            "title": "Florida discourages use of mRNA Covid vaccines in older adults"
+        },
+        {
+            "author": "Aria Bendix",
+            "link": "https://www.nbcnews.com/health/kids-health/symptoms-long-covid-kids-rcna167188",
+            "media": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2024-08/240819-teenage-long-covid-aa-1209p-9cfccd.jpg",
+            "title": "The signature symptoms of long Covid in kids."
+        },
+        {
+            "author": "The Associated Press",
+            "link": "https://www.nbcnews.com/health/health-news/biden-covid-19-didnt-wear-mask-cdc-guidelines-rcna162842",
+            "media": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2024-07/240720-biden-ch-1231-fe1421.jpg",
+            "title": "Biden has Covid and didn't wear a mask. The CDC's guidelines say he doesn't have to."
         }
     ]
 }
