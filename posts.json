@@ -1,0 +1,27 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "author": "Le Kien",
+        "media": "example name",
+        "content": "This is the post content",
+        "pfp": "profile_picture_url",
+        "likes": 100,
+        "shares": 10,
+        "commentsCount": 5,
+        "comments": [
+          {
+            "commentId": 1,
+            "commenter": "Alice",
+            "commentText": "This is a great post!",
+          },
+          {
+            "commentId": 2,
+            "commenter": "Bob",
+            "commentText": "I totally agree!",
+          }
+        ]
+      }
+    ]
+  }
+  

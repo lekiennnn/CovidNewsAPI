@@ -16,7 +16,7 @@ app.use(cors(corsOptions));
 
 app.use(express.json());
 
-
+// signup
 app.post('/users/signup', (req, res) => {
 
   fs.readFile("users.json", "utf8", (err, data) => {
@@ -63,8 +63,7 @@ app.post('/users/signup', (req, res) => {
   });
 })
 
-
-
+// login
 app.post('/users/login', (req, res) => {
 
   fs.readFile("users.json", "utf8", (err, data) => {
@@ -94,6 +93,7 @@ app.post('/users/login', (req, res) => {
   });
 })
 
+// users
 app.get("/users", (req, res) => {
 
   fs.readFile("users.json", "utf8", (err, data) => {
@@ -111,6 +111,7 @@ app.get("/users", (req, res) => {
   });
 });
 
+// articles
 app.get("/articles", (req, res) => {
   fs.readFile("db.json", "utf8", (err, data) => {
     if (err) {
@@ -129,10 +130,11 @@ app.get("/articles", (req, res) => {
   });
 });
 
-app.post("/products", (req, res) => {
-  const { image, name, price, company, category, description } = req.body;
+//posts
+app.post("/posts", (req, res) => {
+  const {author, media, status, pfp} = req.body;
 
-  fs.readFile("db.json", "utf8", (err, data) => {
+  fs.readFile("posts.json", "utf8", (err, data) => {
     if (err) {
       console.log(err);
       res.status(500).send("Internal Server Error");
@@ -148,14 +150,14 @@ app.post("/products", (req, res) => {
 
     const newItem = {
       id: maxId + 1,
-      image,
-      name,
-      price, company, category, description
+      author,
+      media,
+      status, pfp
     };
 
     jsonData.items.push(newItem);
 
-    fs.writeFile("db.json", JSON.stringify(jsonData), (err) => {
+    fs.writeFile("posts.json", JSON.stringify(jsonData), (err) => {
       if (err) {
         console.log(err);
         res.status(500).send("Internal Server Error");
@@ -167,12 +169,28 @@ app.post("/products", (req, res) => {
   });
 });
 
+app.get("/posts", (req, res) => {
+  fs.readFile("posts.json", "utf8", (err, data) => {
+    if (err) {
+      console.log(err);
+      res.status(500).send("Internal Server Error");
+      return;
+    }
 
-app.put("/products/:id", (req, res) => {
+    const jsonData = JSON.parse(data);
+
+    res.status(200).json({
+      posts: jsonData.posts, // Correct key for the 'posts' array
+    });
+  });
+});
+
+
+app.put("/posts/:id", (req, res) => {
   const id = parseInt(req.params.id);
-  const { image, name, price, company, category, description  } = req.body;
+  const { author, media, status, pfp  } = req.body;
 
-  fs.readFile("db.json", "utf8", (err, data) => {
+  fs.readFile("posts.json", "utf8", (err, data) => {
     if (err) {
       console.log(err);
       res.status(500).send("Internal Server Error");
@@ -190,10 +208,10 @@ app.put("/products/:id", (req, res) => {
 
     jsonData.items[index] = {
       id,
-      image, name, price, company, category, description
+      author, media, status, pfp
     };
 
-    fs.writeFile("db.json", JSON.stringify(jsonData), (err) => {
+    fs.writeFile("posts.json", JSON.stringify(jsonData), (err) => {
       if (err) {
         console.log(err);
         res.status(500).send("Internal Server Error");
@@ -205,11 +223,10 @@ app.put("/products/:id", (req, res) => {
   });
 });
 
-
-app.delete("/products/:id", (req, res) => {
+app.delete("/posts/:id", (req, res) => {
   const id = parseInt(req.params.id);
 
-  fs.readFile("db.json", "utf8", (err, data) => {
+  fs.readFile("posts.json", "utf8", (err, data) => {
     if (err) {
       console.log(err);
       res.status(500).send("Internal Server Error");
@@ -227,7 +244,7 @@ app.delete("/products/:id", (req, res) => {
 
     jsonData.items.splice(index, 1);
 
-    fs.writeFile("db.json", JSON.stringify(jsonData), (err) => {
+    fs.writeFile("posts.json", JSON.stringify(jsonData), (err) => {
       if (err) {
         console.log(err);
         res.status(500).send("Internal Server Error");
@@ -238,6 +255,7 @@ app.delete("/products/:id", (req, res) => {
     });
   });
 });
+
 
 const port = process.env.PORT || 1500
 
