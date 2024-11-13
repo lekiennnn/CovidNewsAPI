@@ -3,9 +3,9 @@
       {
         "id": 1,
         "author": "Le Kien",
-        "media": "example name",
+        "image": "https://s.yimg.com/ny/api/res/1.2/UoeQb4ohNxxu2.XaTI_SwA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03OTQ-/https://media.zenfs.com/en/austin_american_statesman_natl_articles_871/0d22079f1eeea6f1bd1f5b0490a7cbad",
         "content": "This is the post content",
-        "pfp": "profile_picture_url",
+        "pfp": "https://i.pinimg.com/originals/f1/0f/f7/f10ff70a7155e5ab666bcdd1b45b726d.jpg",
         "likes": 100,
         "shares": 10,
         "commentsCount": 5,
@@ -13,12 +13,17 @@
           {
             "commentId": 1,
             "commenter": "Alice",
-            "commentText": "This is a great post!",
+            "commentText": "This is a great post!"
           },
           {
             "commentId": 2,
             "commenter": "Bob",
-            "commentText": "I totally agree!",
+            "commentText": "I totally agree!"
+          }
+          {
+            "commentId": 3,
+            "commenter": "Kek",
+            "commentText": "I totally agree!!!"
           }
         ]
       }
