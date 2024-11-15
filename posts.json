@@ -4,7 +4,7 @@
         "id": 1,
         "author": "Le Kien",
         "image": "https://s.yimg.com/ny/api/res/1.2/UoeQb4ohNxxu2.XaTI_SwA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03OTQ-/https://media.zenfs.com/en/austin_american_statesman_natl_articles_871/0d22079f1eeea6f1bd1f5b0490a7cbad",
-        "content": "This is the post content",
+        "content": "New COVID-19 and flu shots are here. Can you get them together? Here's what experts say",
         "pfp": "https://i.pinimg.com/originals/f1/0f/f7/f10ff70a7155e5ab666bcdd1b45b726d.jpg",
         "likes": 100,
         "shares": 10,
@@ -24,6 +24,28 @@
             "commentId": 3,
             "commenter": "Kek",
             "commentText": "I totally agree!!!"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "author": "Em Kek",
+        "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2024-09/240926-covid-variant-kh-7f48f3.jpg",
+        "content": "What to know about the XEC Covid variant",
+        "pfp": "https://i.pinimg.com/originals/f1/0f/f7/f10ff70a7155e5ab666bcdd1b45b726d.jpg",
+        "likes": 69,
+        "shares": 10,
+        "commentsCount": 5,
+        "comments": [
+          {
+            "commentId": 1,
+            "commenter": "Alice",
+            "commentText": "This is a great post!"
+          },
+          {
+            "commentId": 2,
+            "commenter": "Bob",
+            "commentText": "I totally agree!"
           }
         ]
       }
