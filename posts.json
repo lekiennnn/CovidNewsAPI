@@ -48,6 +48,28 @@
             "commentText": "I totally agree!"
           }
         ]
+      },
+      {
+        "id": 3,
+        "author": "Khong biet nua",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbSY5USz9LvDMsw7zU4w-Jv0FAMwn9BHJ8Kw&s",
+        "content": "Mark xoăn hehe",
+        "pfp": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbSY5USz9LvDMsw7zU4w-Jv0FAMwn9BHJ8Kw&s",
+        "likes": 69,
+        "shares": 10,
+        "commentsCount": 5,
+        "comments": [
+          {
+            "commentId": 1,
+            "commenter": "Alice",
+            "commentText": "This is a great post!"
+          },
+          {
+            "commentId": 2,
+            "commenter": "Bob",
+            "commentText": "I totally agree!"
+          }
+        ]
       }
     ]
   }
